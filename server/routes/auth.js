@@ -41,4 +41,13 @@ router.post('/', auth, async (req, res) => {
   await post.save();
   res.json(post);
 });
+// Lấy thông tin user
+router.get('/me', auth, async (req, res) => {
+  try {
+    const user = await User.findById(req.user.userId).select('-password');
+    res.json(user);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
 module.exports = router;
