@@ -8,7 +8,12 @@
     "dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["minigram", "instagram", "social", "nodejs"],
+  "keywords": [
+    "minigram",
+    "instagram",
+    "social",
+    "nodejs"
+  ],
   "author": "Bạn",
   "license": "ISC",
   "type": "commonjs",
